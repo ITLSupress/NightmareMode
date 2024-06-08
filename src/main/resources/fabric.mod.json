@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "nightmaremode",
+  "version": "${version}",
+
+  "name": "Nightmare Mode",
+  "description": "You Will Not Survive!",
+  "authors": [
+    "Elmi, ITL Supress, BTF Dev Team"
+  ],
+  "contact": {
+    "homepage": "https://itlesports.com/",
+    "sources": "https://github.com/BTWCommunity/NightmareMode"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "init": [
+      "com.itlesports.nightmaremode.NightmareMode"
+    ],
+    "preLaunch": [
+      "com.itlesports.nightmaremode.NightmareMode"
+    ]
+  },
+  "mixins": [
+    "nightmaremode.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
